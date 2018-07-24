@@ -43,6 +43,7 @@ console.log("Regular planets", planets);
 */
 
 
+
 // Use the reduce method to create a sentence from the words in the following array
 const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
 
@@ -50,3 +51,6 @@ let e = words.filter(function (word){
     return word.includes('e')
 });
 console.log(e);
+
+const sentence = words.reduce((current, next) => `${current} ${next}`);
+console.log(sentence)
